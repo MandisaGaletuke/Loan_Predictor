@@ -1,0 +1,43 @@
+**Project 1: Loan Defaulter Prediction Model (Finance - Predictive Analytics)**
+📌 Repository Name: Loan_Predictor
+
+**Overview**
+This project is a predictive analytics model designed to classify loan applicants into defaulters and non-defaulters using machine learning. The goal is to help financial institutions assess credit risk and optimize loan approvals.
+
+✅ Completed as part of the Xaltius Data Science Internship
+✅ Used 4 ML models, with Random Forest achieving the highest accuracy (68.8%)
+✅ Built an end-to-end data science pipeline covering data preprocessing, feature engineering, and model evaluation
+
+**Dataset**
+Source: A subset of Bajaj FinServ's financial dataset (some columns removed for privacy).
+Size: 5,000 records, 17 features.
+Key Features: Loan Amount, Interest Rate, Loan Term, Credit Score, Employment Type, Income Level.
+Target Variable: default_status (1 = Default, 0 = Non-Default).
+
+**Data Exploration & Key Insights**
+📊 Imbalance in Default Status: 80% non-defaulters, 20% defaulters.
+📊 Feature Importance: Loan Amount, Interest Rate, and Credit Score are the strongest predictors of default.
+📊 Outliers Detected: High-interest rates had significant outliers, indicating potential risk customers.
+
+**Machine Learning Models Tested**
+Model	Accuracy	F1 Score	Best Performance
+Decision Tree	32.4%	0.31	🚫
+Random Forest	68.8%	0.48	✅
+Logistic Regression	54.2%	0.22	🚫
+Gradient Boosting	61.5%	0.39	🚫
+🔹 Best Model: Random Forest (After SMOTE balancing)
+
+**Implementation & Tools**
+Programming Language: Python 🐍
+Libraries Used: pandas, numpy, matplotlib, seaborn, scikit-learn, imbalanced-learn
+EDA & Visualization: matplotlib, seaborn
+Feature Engineering: Encoding categorical features, scaling numeric features
+Model Training & Evaluation: SMOTE balancing, precision-recall analysis
+
+**Business Impact**
+📌 Automated risk assessment for loan approvals
+📌 Early detection of high-risk applicants
+📌 Dynamic policy adjustments using customer clustering
+
+📄 Presentation: [Project Slides](./Project\ 1\ -\ Finance\ -\ Predictive\ Analysis\ -\ Mandisa\ Galetuke.pptx)
+📂 Code Notebook: [Loan Default Prediction.ipynb](./Project\ 1\ -\ Finance\ -\ Predictive\ Analytics\ -\ Mandisa\ Galetuke.ipynb)
